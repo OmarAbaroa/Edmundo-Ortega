@@ -1,3 +1,7 @@
+$dark: #2d343e;
+$yellow: yellow;
+$white: white;
+
 .dropdown-menu{
     &.show{
         border: 0px;
@@ -5,39 +9,63 @@
 }
 .navbar-toggler{
     border: 0px!important;
-    color: white;
+    color: $white;
     &:hover{
         cursor: pointer;
     }
 }
 
-.body{
+.text-yellow{
+    color: $yellow;
+}
+
+.app{
     min-height: 100vh;
-    background-color: #2d343e;
+    background-color: $dark;
+    a{
+        color: $white;
+    }
+    p{
+        color: $white;
+    }
     .navbar{
-        color: white;
+        color: $white;
         .nav-link{
-            color: white!important;
+            color: $white!important;
             &:hover{
-                color: yellow!important;
+                color: $yellow!important;
             }
         }
         
         .dropdown-menu{
-            background-color: #2d343e;
+            background-color: $dark;
             a{
-                color: white;
+                color: $white;
             }
             .dropdown-item{
                 &:hover{
-                    background-color: #2d343e;
-                    color: yellow;
+                    background-color: $dark;
+                    color: $yellow;
                 }
                 &.active{
-                    background-color: #2d343e;
-                    color: yellow;
+                    background-color: $dark;
+                    color: $yellow;
                 }
             }
         }
+    }
+}
+
+.collapse-accordion-button{
+    color: white!important;
+    font-size: 1.5rem!important;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    display: flex!important;
+    align-items: center;
+    span{
+        font-size: 0.7rem!important;
+        text-align: center;
+        margin-right: 8px;
     }
 }
