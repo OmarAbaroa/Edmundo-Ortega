@@ -30,12 +30,12 @@
             }
             .dropdown-item{
                 &:hover{
-                    background-color: yellow;
-                    color: #2d343e;
+                    background-color: #2d343e;
+                    color: yellow;
                 }
                 &.active{
-                    background-color: yellow;
-                    color: #2d343e;
+                    background-color: #2d343e;
+                    color: yellow;
                 }
             }
         }
