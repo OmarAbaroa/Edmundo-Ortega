@@ -1,0 +1,43 @@
+.dropdown-menu{
+    &.show{
+        border: 0px;
+    }
+}
+.navbar-toggler{
+    border: 0px!important;
+    color: white;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.body{
+    min-height: 100vh;
+    background-color: #2d343e;
+    .navbar{
+        color: white;
+        .nav-link{
+            color: white!important;
+            &:hover{
+                color: yellow!important;
+            }
+        }
+        
+        .dropdown-menu{
+            background-color: #2d343e;
+            a{
+                color: white;
+            }
+            .dropdown-item{
+                &:hover{
+                    background-color: yellow;
+                    color: #2d343e;
+                }
+                &.active{
+                    background-color: yellow;
+                    color: #2d343e;
+                }
+            }
+        }
+    }
+}
