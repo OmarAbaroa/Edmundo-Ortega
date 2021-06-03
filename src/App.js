@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
