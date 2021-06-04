@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 //$dark: #2d343e;
 $dark: #232A34;
 $dark2: #2D343E;
@@ -23,7 +24,8 @@ $white: white;
 
 .app{
     min-height: 100vh;
-    /* background-color: $dark; */
+    font-family: 'Montserrat', serif;
+    background-color: $dark;
     a{ color: $white; }
     p{ color: $white; }
     .header{ background-color: $dark; }
@@ -58,12 +60,15 @@ $white: white;
     padding-right: 0px!important;
     display: flex!important;
     align-items: center;
-    span{
+    .bullet{
         font-size: 0.7rem!important;
         text-align: center;
         margin-right: 8px;
     }
+    span{
+        text-align: left;
+    }
 }
 
-.bg-gray-1{ background-color: $dark; }
-.bg-gray-2{ background-color: $dark2; }
+/* .bg-gray-1{ background-color: $dark; }
+.bg-gray-2{ background-color: $dark2; } */
