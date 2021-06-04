@@ -4,13 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faCircle } from '@fortawesome/free-solid-svg-icons';
 import { Planos } from './assets/images';
 import { motion, AnimatePresence } from "framer-motion"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Image = ({ isVisible, src }) => (
     <AnimatePresence>
         {
             isVisible && (
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.8 }} transition={{ duration: 1.5 }} exit={{ opacity: 0 }} > 
-                    <img className = 'img-fluid' src = { src }  alt  = 'Planos' /> 
+                    {/* <img className = 'img-fluid' src = { src }  alt  = 'Planos' />  */}
+                    <LazyLoadImage className = 'img-fluid' alt = 'PLANOS' src = { src }/>
                 </motion.div>
             )
         }
@@ -25,7 +27,7 @@ class Page extends Component {
 
     render(){
         return (
-            <div className="app">
+            <div className="app px-2 px-md-3">
                 <div className = 'header'>
                     <Navbar expand = 'lg'>
                         <Navbar.Toggle className = 'ml-auto text-white'>
