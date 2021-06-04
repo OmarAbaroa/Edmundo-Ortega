@@ -1,4 +1,6 @@
-$dark: #2d343e;
+//$dark: #2d343e;
+$dark: #232A34;
+$dark2: #2D343E;
 $yellow: yellow;
 $white: white;
 
@@ -21,27 +23,20 @@ $white: white;
 
 .app{
     min-height: 100vh;
-    background-color: $dark;
-    a{
-        color: $white;
-    }
-    p{
-        color: $white;
-    }
+    /* background-color: $dark; */
+    a{ color: $white; }
+    p{ color: $white; }
+    .header{ background-color: $dark; }
     .navbar{
         color: $white;
         .nav-link{
             color: $white!important;
-            &:hover{
-                color: $yellow!important;
-            }
+            &:hover{ color: $yellow!important; }
         }
         
         .dropdown-menu{
             background-color: $dark;
-            a{
-                color: $white;
-            }
+            a{ color: $white; }
             .dropdown-item{
                 &:hover{
                     background-color: $dark;
@@ -69,3 +64,6 @@ $white: white;
         margin-right: 8px;
     }
 }
+
+.bg-gray-1{ background-color: $dark; }
+.bg-gray-2{ background-color: $dark2; }
